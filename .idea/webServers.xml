@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="21aae24c-3c22-46aa-96a8-cfd9daaf784a" name="SLSFV" url="http://web78.server40.configcenter.info">
+        <fileTransfer host="web78.server40.configcenter.info" port="21" rootFolder="/httpdocs/2020.forum.slsfv.de/contao">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

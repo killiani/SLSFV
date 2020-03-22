@@ -1,0 +1,39 @@
+@mixin center {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@mixin x_center{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.x_center{
+  @include x_center;
+}
+.center{
+  @include center;
+}
+
+
+/////Size
+$content_size: 1000px;
+$content_margin: 5px;
+//Div Boxen calc
+$x: ($content_margin*2);
+$container_size_4: ($content_size/4)-$x;
+$container_size_2: ($content_size/2)-$x;
+
+
+$gray: #595959;
+$blue_marin: #5c9dc0; //rgb(0,102,157);
+$blue_sky: rgb(0,158,227);
+$blue_sky_light: rgb(66, 216, 255);
+$green: rgb(76, 128, 45);
+$green_light: rgb(138,179,77);
+$orange: rgba(232,76,5,0.73);

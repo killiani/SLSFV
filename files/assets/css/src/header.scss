@@ -1,1 +1,138 @@
 @import "variables";
+
+  .head{
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    height: 130px;
+  }
+
+  .header-logo{
+    float: left;
+  }
+
+  .header-image{
+    position: absolute;
+    top: -19vw;
+    z-index: -1;
+    max-width: 1900px;
+    width: 120%;
+    transform: translateX(-50%);
+    left: 50%;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  ////////////////////////////////Navigation
+  .mod_navigation{
+    top: 32px;
+    position: relative;
+
+  }
+
+  .level_2 {
+    position: fixed;
+    //left: auto;
+    max-height: 0;
+    z-index: 2;
+    opacity: 0;
+    top: 130px;
+    display: none;
+    transform: translateX(-21vw);
+    li {
+      display: block !important;
+      background-color: rgba(255,255,255,0.9);
+      border-bottom: 2px solid $blue_marin;
+    }
+  }
+
+  .submenu:hover .level_2 {
+    max-height: 100%;
+    opacity: 1;
+    transition: all 0.7s;
+    display: unset;
+  }
+
+  nav {
+    a:hover{
+      color: $blue_sky_light !important;
+      transition: all 0.5s;
+    }
+  }
+
+  .active{
+    color: $blue_sky_light;
+  }
+
+
+
+  .burger{
+    border: 2px solid white;
+    border-radius: 8px;
+    right: 10px;
+    position: absolute;
+    top: 168px;
+    cursor: pointer;
+    width: 68px;
+    background-color: $blue_sky;
+    z-index: 2;
+  }
+
+  .menu-close{ //X im Mobile Menu
+    filter: invert(100%) sepia(44%) saturate(2%) hue-rotate(100deg) brightness(103%) contrast(101%);
+    position: absolute;
+    top: 50px;
+    right: 26px;
+    width: 23px;
+    cursor: pointer;
+  }
+
+  .mobile_menu .inner{
+    background-color: $blue_marin;
+  }
+
+  #header {
+    li {
+      display: inline;
+      padding: 7px;
+    }
+  }
+
+//////////////////////////////////XL
+@media (min-width: 1600px){
+  .header-image{
+    top: -632px;
+    width: unset;
+    transform: unset;
+    @include x_center;
+  }
+  .stage_abstand{
+    margin-top: 600px;
+  }
+}
+
+///////////////////////////////////Desktop
+@media (max-width: 1599px){
+  .stage_abstand{
+    margin-top: 52vw;
+  }
+}
+
+
+
+
+//////////////////////////////////Mobile
+@media (max-width: 700px) { //bis max * ausgeführt
+  .header-image {
+    position: absolute;
+    top: -34vw;
+    opacity: 0.1;
+  }
+  .head{
+    background-color: unset;
+  }
+  .stage_abstand{
+    margin-top: 100px;
+  }
+}

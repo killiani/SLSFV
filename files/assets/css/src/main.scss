@@ -1,1 +1,140 @@
 @import "variables";
+
+.block_4{
+  width: $container_size_4;
+  background-color: $blue_sky;
+}
+
+.block_2{
+  width: $container_size_2;
+  background-color: $blue_marin;
+}
+
+.block_2, .block_4{
+  p, h1, h2, h3, hr{ color: white;}
+  a {color: $orange}
+  margin: $content_margin;
+  height: 150px;
+  border-radius: 5px;
+  float: left;
+  position: relative;
+}
+
+.section{
+  //@include x_center;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  //padding-right: 50%;
+  //transform: translateX(21%);
+}
+
+.center_section{
+  float:left;
+  position: relative;
+}
+
+.text_block{
+  max-width: 702px;
+  @include x_center;
+  padding: 20px;
+}
+
+.table_person{
+  p{
+    padding-left: 20px;
+  }
+  td{
+    height: 200px;
+  }
+}
+
+.flyer{
+  background-color: $blue_sky_light;
+  border-radius: 7px;
+  height: 200px;
+  padding: 30px;
+  margin: 120px 0;
+  @include x_center;
+  img {
+    position: absolute;
+    width: 230px;
+    transform: translateY(-81%);
+    -webkit-box-shadow: 10px 10px 155px -46px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 155px -46px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 155px -46px rgba(0,0,0,0.75);
+  }
+  p, h2 {
+    color: white;
+    text-align: left;
+  }
+  a{
+    background-color: $blue_sky;
+    width: 200px;
+    display: inline-block;
+    height: 36px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    border-radius: 7px;
+  }
+  table{
+    @include x_center;
+  }
+}
+
+///////////////////////////////////Nachrichten
+
+.mod_newslist, .mod_newsreader, .mod_newsarchive{
+  h2 {
+    //padding-top: 20px;
+    width: auto;
+  }
+  @include x_center;
+}
+
+.layout_short{
+  background-color: $blue_marin;
+  margin: 20px 0;
+  height: 280px;
+  p, h2, a {
+    margin-left: unset;
+    margin-right: unset;
+    width: 48%;
+    color: white;
+    text-align: left;
+    //padding: 20px 0 0 20px;
+  }
+
+  p, h2 {
+    padding: 0 0 0 20px;
+  }
+
+
+  .image_container{
+    img{
+      width: 44vw;
+      height: auto;
+      max-width: 490px;
+    }
+    height: 0;
+  }
+}
+
+
+
+.ce_hyperlink {
+  text-align: center;
+  background-color: $blue_sky;
+  width: 186px;
+  height: 50px;
+  cursor: pointer;
+  a{color:white}
+  @include x_center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
