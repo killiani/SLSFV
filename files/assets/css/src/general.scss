@@ -13,12 +13,15 @@
   }
 
   h1{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 17pt;
+    color: $blue_marin;
+    @include x_center;
+    padding-bottom: 50px;
   }
 
   h2 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 17pt;
     color: $blue_marin;
     @include x_center;
@@ -32,8 +35,7 @@
     color: white;
   }
 
-
-  p, a, ul, li {
+  p, a, ul, li, .relevance, .toggler{
     font-weight: 400;
     font-size: 13pt;
     text-decoration: none;
@@ -42,25 +44,56 @@
     color: $gray;
   }
 
+  .space{
+    height: 5vw;
+  }
 
-    .mod_article {
+.accordion{
+  table{
+    border-collapse: separate;
+    border-spacing: 1em;
+  }
+  td{color: $gray !important;}
+  li{list-style: circle !important;}
+}
+
+.active{
+  color: $blue_sky_light !important;
+}
+
+.toggler{
+  border-bottom: 1px solid $blue_sky_light;
+  padding-bottom: 10px;
+}
+.toggler:hover{
+  color: $blue_sky_light;
+  transition: all 0.4s;
+}
+
+
+    .mod_article,  {
       max-width: $content_size;
       @include x_center;
       width: 100%;
       margin-top: 50px;
+      a{
+        color: $blue_sky_light;
+        text-decoration-line: underline;
+      }
     }
 
-  .right{
+
+.right{
     float:right;
   }
 
-@media  (max-width: 700px){ //bis * ausgeführt
+@media  (max-width: 1030px){ //bis * ausgeführt
   .desktop {
     display: none;
   }
 }
 
-@media  (min-width: 699px){ //ab * ausgeführt
+@media  (min-width: 1029px){ //ab * ausgeführt
   .mobile {
     display: none;
   }

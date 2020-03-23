@@ -8,6 +8,7 @@
 
   .header-logo{
     float: left;
+    padding-top: 14px;
   }
 
   .header-image{
@@ -25,8 +26,15 @@
   }
 
   ////////////////////////////////Navigation
+  #header {
+    li {
+      display: inline;
+      padding: 20px 12px;
+    }
+  }
+
   .mod_navigation{
-    top: 32px;
+    top: 39px;
     position: relative;
 
   }
@@ -92,12 +100,51 @@
     background-color: $blue_marin;
   }
 
-  #header {
-    li {
-      display: inline;
-      padding: 7px;
-    }
-  }
+  ////////////////////////////////SucheFELD im Head
+.mod_form {
+  position: absolute;
+  transform: translateX(230%);
+  margin: auto 0;
+}
+
+.formbody {
+  display: inline-flex;
+}
+
+select, input, textarea {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#ctrl_1 {
+  border-style: none;
+  border-bottom: 1px solid  $blue_marin;
+}
+
+#ctrl_2 {
+  width: 11px;
+  padding: -3px;
+  transform: translateX(-19px);
+}
+
+///////////////////////SuchSEITE
+#ctrl_submit_8 {
+  height: 25px;
+}
+
+.mod_search > form:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+  padding: 0 10px;
+}
+
+.mod_search {
+  margin-top: 34px;
+  padding: 0 20px;
+}
+
+
+
+
+
+
 
 //////////////////////////////////XL
 @media (min-width: 1600px){

@@ -10,25 +10,12 @@
   //background-size: contain;
   background-origin: padding-box;
   background-clip: border-box;
-  height: 660px;
+  height: 765px;
   .mod_article{
     max-width: unset;
-    margin-top: unset;
+    margin-top: 218px !important;//überschreibt die global 50px
   }
 }
-
-/*.footer_bg_1{
-  background-color: $blue_marin;
-  height: 70vh;
-  position: absolute;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  width: 3000px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width:100vw;
-  top: 50px;
-}*/
 
 .footer_bg_2{
   background-color: white;
@@ -46,8 +33,6 @@
 .footer_content{
   position: absolute;
   z-index: 1;
-  margin-top: 24vw;
-  bottom: -76vh;
   td{
     line-height: 27px;
   }
