@@ -1,1 +1,129 @@
 @import "variables";
+.main_nav_punkt{
+  font-weight: 800;
+}
+
+.nav_punkte a {
+  font-size: 11pt;
+}
+
+////////////////////////////////Navigation
+#header {
+  li {
+    display: inline;
+    padding: 20px 12px;
+  }
+}
+
+.mod_navigation{
+  top: 39px;
+  position: relative;
+
+}
+
+.level_2 {
+  position: fixed;
+  left: 50%;
+  max-height: 0;
+  z-index: 2;
+  opacity: 0;
+  top: 130px;
+  display: none;
+  transform: translateX(-50%);
+  width: $content_size;
+
+  .active{
+    width: $content_size;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  li {
+    display: block !important;
+    background-color: rgba(255,255,255,0.9);
+    border-bottom: 2px solid $blue_marin;
+    padding: unset !important;
+    a{
+      width: $content_size;
+      //display: block;
+      height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+}
+
+.submenu:hover .level_2 {
+  max-height: 100%;
+  opacity: 1;
+  transition: 0.7s;
+  display: unset;
+  a:hover{
+    color: white !important;
+    transition: all 0.3s;
+    background-color: $blue_marin;
+  }
+}
+
+.level_1{
+  a:hover{
+    color: $blue_sky_light !important;
+    transition: all 0.3s;
+  }
+}
+
+.active{
+  color: $blue_sky_light;
+}
+
+.burger{
+  border: 2px solid white;
+  border-radius: 8px;
+  right: 10px;
+  position: absolute;
+  top: 168px;
+  cursor: pointer;
+  width: 68px;
+  background-color: $blue_sky;
+  z-index: 2;
+}
+
+.menu-close{ //X im Mobile Menu
+  img{
+    filter: invert(100%) sepia(44%) saturate(2%) hue-rotate(100deg) brightness(103%) contrast(101%);
+  }
+  position: absolute;
+  top: 50px;
+  right: 26px;
+  width: 23px;
+  cursor: pointer;
+  z-index: 2;
+  //border: 20px solid $blue_sky_light;
+  //border-radius: 50%;
+  background-color: $blue_marin;
+  padding: 10px;
+}
+
+.mobile_menu .inner{
+  background-color: $blue_marin;
+}
+
+.logo-mobile-nav{
+  filter: invert(100%) sepia(44%) saturate(2%) hue-rotate(100deg) brightness(103%) contrast(101%);
+  @include center;
+  margin-top: 50px;
+}
+
+.nav_punkte{
+  ul {padding: 0}
+}
+.nav_punkte_einzeln{
+  a {color: white;}
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  max-width: 300px;
+  line-height: 40px;
+}

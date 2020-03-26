@@ -1,8 +1,7 @@
 @import "variables";
 
 #footer{
-  background-image: url("../layout/footer-background.png ");
-  background-color: rgba(0, 0, 0, 0);
+  //background-color: rgba(0, 0, 0, 0);
   background-position-x: center;
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -10,16 +9,28 @@
   //background-size: contain;
   background-origin: padding-box;
   background-clip: border-box;
-  height: 765px;
+  //height: 858px;
+  height: 100vh;
+  min-height: 817px;
   .mod_article{
     max-width: unset;
-    margin-top: 218px !important;//überschreibt die global 50px
+    margin-top: 0 !important;//überschreibt die global 50px
+    height: 100vh;
+    min-height: 817px;
+  }
+  a{
+    color: white;
+    text-decoration-line: none;
+  }
+  a:hover{
+    color: orange;
+    transition: 0.5s;
   }
 }
 
 .footer_bg_2{
   background-color: white;
-  height: 182px;
+  //height: 182px;
   position: absolute;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -27,46 +38,79 @@
   left: 50%;
   transform: translateX(-50%);
   //min-width:100vw;
-  top: 811px;
+  //top: 811px;
 }
 
 .footer_content{
   position: absolute;
   z-index: 1;
+  //top: 322px;
   td{
-    line-height: 27px;
+    //line-height: 27px;
+    vertical-align: top;
   }
 }
 
 .footer_text{
-  padding-right: 50%;
-  transform: translateX(21%);
+  width: 529px;
+  height: 500px;
+
+  position: absolute;
+  bottom: 113px;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 .white_underline{
   border-bottom: 1px solid white;
 }
 
-.footer_navi{
-  margin-top: 216px;
-}
-
 .footer_logo{
+  //background-image: url("../layout/footer-background-logos.png");
+  background-attachment: scroll;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
   //background-color: white;
   clear: both;
   width: 50%;
-  transform: translateX(50%);
+  //max-width: 777px;
+  //transform: translateX(50%);
+  position: absolute;
+  bottom: 0;
+  left: 24%;
+  img{
+    max-width: 150px;
+  }
 }
 
 .adress{
   margin-right: 50px;
-  float: right;
+  img{
+    filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(283deg) brightness(106%) contrast(100%);
+  }
+  td{
+    line-height: 20px;
+    vertical-align: middle;
+    .top{
+      vertical-align: top;
+    }
+  }
+}
+
+.footer_navi{
+  margin-top: 142px;
+  td {
+    display: flex;
+    line-height: 25px;
+  }
+  img{
+    filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(283deg) brightness(106%) contrast(100%);
+  }
 }
 
 table{
   @include x_center;
   border-collapse: collapse;
 }
+

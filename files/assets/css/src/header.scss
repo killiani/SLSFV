@@ -1,5 +1,18 @@
 @import "variables";
 
+
+#main .mod_navigation ul ul {
+  width: auto;
+  min-width: 100px;
+  left: 1000.1px;
+  position: absolute;
+  margin-top: 17px;
+  background-color: rgba(255, 255, 255, .9);
+  z-index: 1;
+}
+
+
+
   .head{
     width: 100%;
     background-color: rgba(255,255,255,0.9);
@@ -25,85 +38,10 @@
     }
   }
 
-  ////////////////////////////////Navigation
-  #header {
-    li {
-      display: inline;
-      padding: 20px 12px;
-    }
-  }
-
-  .mod_navigation{
-    top: 39px;
-    position: relative;
-
-  }
-
-  .level_2 {
-    position: fixed;
-    //left: auto;
-    max-height: 0;
-    z-index: 2;
-    opacity: 0;
-    top: 130px;
-    display: none;
-    transform: translateX(-21vw);
-    li {
-      display: block !important;
-      background-color: rgba(255,255,255,0.9);
-      border-bottom: 2px solid $blue_marin;
-    }
-  }
-
-  .submenu:hover .level_2 {
-    max-height: 100%;
-    opacity: 1;
-    transition: all 0.7s;
-    display: unset;
-  }
-
-  nav {
-    a:hover{
-      color: $blue_sky_light !important;
-      transition: all 0.5s;
-    }
-  }
-
-  .active{
-    color: $blue_sky_light;
-  }
-
-
-
-  .burger{
-    border: 2px solid white;
-    border-radius: 8px;
-    right: 10px;
-    position: absolute;
-    top: 168px;
-    cursor: pointer;
-    width: 68px;
-    background-color: $blue_sky;
-    z-index: 2;
-  }
-
-  .menu-close{ //X im Mobile Menu
-    filter: invert(100%) sepia(44%) saturate(2%) hue-rotate(100deg) brightness(103%) contrast(101%);
-    position: absolute;
-    top: 50px;
-    right: 26px;
-    width: 23px;
-    cursor: pointer;
-  }
-
-  .mobile_menu .inner{
-    background-color: $blue_marin;
-  }
-
   ////////////////////////////////SucheFELD im Head
 .mod_form {
   position: absolute;
-  transform: translateX(230%);
+  transform: translateX(223%);
   margin: auto 0;
 }
 
@@ -121,9 +59,9 @@ select, input, textarea {
 }
 
 #ctrl_2 {
-  width: 11px;
+  width: 16px;
   padding: -3px;
-  transform: translateX(-19px);
+  transform: translateX(-18px);
 }
 
 ///////////////////////SuchSEITE
@@ -140,12 +78,6 @@ select, input, textarea {
   padding: 0 20px;
 }
 
-
-
-
-
-
-
 //////////////////////////////////XL
 @media (min-width: 1600px){
   .header-image{
@@ -157,6 +89,9 @@ select, input, textarea {
   .stage_abstand{
     margin-top: 600px;
   }
+  #footer, #footer .mod_article{
+    height: 70vh !important;
+  }
 }
 
 ///////////////////////////////////Desktop
@@ -165,9 +100,6 @@ select, input, textarea {
     margin-top: 52vw;
   }
 }
-
-
-
 
 //////////////////////////////////Mobile
 @media (max-width: 700px) { //bis max * ausgeführt
@@ -183,3 +115,5 @@ select, input, textarea {
     margin-top: 100px;
   }
 }
+
+
