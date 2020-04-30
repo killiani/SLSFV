@@ -7,6 +7,7 @@
   font-size: 11pt;
 }
 
+
 ////////////////////////////////Navigation
 #header {
   li {
@@ -109,6 +110,7 @@
 
 .mobile_menu .inner{
   background-color: $blue_marin;
+  li, ul{list-style: none}
 }
 
 .logo-mobile-nav{
