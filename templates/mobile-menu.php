@@ -25,7 +25,7 @@
             <ul>
                 <li class="nav_punkte_einzeln"><a  class="scroll-button" href="{{link_url::17}}">Nützliches zum Thema Fördervereine</a> </li>
                 <li class="nav_punkte_einzeln"><a  class="scroll-button" href="{{link_url::18}}">Fördermöglichkeiten</a> </li>
-                <li class="nav_punkte_einzeln"><a  class="scroll-button" href="{{link_url::19}}">andere Landesverbände</a> </li>
+                <li class="nav_punkte_einzeln"><a  class="scroll-button" href="{{link_url::19}}">Wichtige Kooperationspartner</a> </li>
                 <li class="nav_punkte_einzeln"><a  class="scroll-button" href="{{link_url::20}}">Best Practice Sammlung</a> </li>
             </ul>
         <li class="nav_punkte_einzeln"><a  class="main_nav_punkt" href="{{link_url::6}}">Chancenpatenschaften</a> </li>

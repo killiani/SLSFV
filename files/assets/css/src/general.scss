@@ -51,6 +51,11 @@
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
     color: $gray;
+    list-style: disc;
+  }
+
+  li{
+    padding-bottom: 20px;
   }
 
   .space{
@@ -63,7 +68,7 @@
     border-spacing: 1em;
   }
   td{color: $gray !important;}
-  li{list-style: circle !important;}
+  ul{list-style: disc !important;}
 }
 
 .active{
@@ -145,8 +150,8 @@
       float: unset !important;
       z-index: -1;
       img {
-        -webkit-filter: brightness(0.7);
-        filter: brightness(0.7);
+        -webkit-filter: brightness(0.5);
+        filter: brightness(0.5);
       }
     }
   }
