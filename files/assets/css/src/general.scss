@@ -32,7 +32,7 @@
   td, th, tr{
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 13pt;
     color: white;
   }
 
@@ -55,7 +55,10 @@
   }
 
   li{
-    padding-bottom: 20px;
+    padding-bottom: 6px;
+  }
+  ul{
+    transform: translateX(-23px);
   }
 
   .space{
@@ -99,8 +102,11 @@
         color: $blue_marin;
         transition: 0.5s;
       }
-      p, h1, h2, {
+      h1, h2, td {
         padding: 0 20px;
+      }
+      td{
+
       }
 
     }
