@@ -19,7 +19,6 @@
 .mod_navigation{
   top: 39px;
   position: relative;
-
 }
 
 .level_2 {
@@ -69,11 +68,13 @@
   }
 }
 
+
 .level_1{
   a:hover{
     color: $blue_sky_light !important;
     transition: all 0.3s;
   }
+  transform: unset;
 }
 
 .active{

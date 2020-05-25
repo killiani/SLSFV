@@ -103,7 +103,7 @@
         transition: 0.5s;
       }
       h1, h2, td {
-        padding: 0 20px;
+        //padding: 0 20px;
       }
       td{
 
@@ -149,9 +149,14 @@
   .layout_short .image_container img {
     width: 100%;
   }
+
+
   .layout_short {
     background-color: unset !important;
     height: unset !important;
+    p, h1, h2, a{
+      width: 60% !important;
+    }
     .image_container{
       float: unset !important;
       z-index: -1;
@@ -255,6 +260,7 @@
   #footer {
     background-image: url("../layout/footer-background.png ");
   }
+
 }
 
 

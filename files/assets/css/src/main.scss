@@ -3,6 +3,9 @@ body {
   overflow-x: hidden;
 }
 
+.layout_full{
+  padding: 0 20px;
+}
 
 .block_4{
   background-color: $blue_sky;
@@ -136,10 +139,12 @@ body {
   p, h2, a {
     margin-left: unset;
     margin-right: unset;
-    width: 60%;
+    width: 42%;
     color: white;
     text-align: left;
   }
+
+
   h2 a {font-weight: bold;}
 
   .more a:hover, h2 a:hover{
